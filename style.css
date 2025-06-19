@@ -7,7 +7,7 @@ body {
 body {
   font-family: 'Noto Sans KR', sans-serif;
   padding: 24px;
-  font-size: 17pt;
+  font-size: 15pt;
   background-color: white;
   color: #000;
 }
@@ -26,7 +26,7 @@ header h1 {
 
 header p {
   font-size: 15pt;
-  color: #555;
+  color: #303030;
 }
 
 .poster {
