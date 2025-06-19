@@ -7,6 +7,7 @@ body {
 body {
   font-family: 'Noto Sans KR', sans-serif;
   padding: 24px;
+  font-size: 15pt;
   background-color: white;
   color: #000;
 }
@@ -24,7 +25,7 @@ header h1 {
 }
 
 header p {
-  font-size: 12pt;
+  font-size: 15pt;
   color: #555;
 }
 
@@ -63,15 +64,6 @@ section {
   height: 2px;
   background: #000;
   margin: 10px auto 0;
-}
-
-.address {
-  text-align: center;
-  font-style: normal;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 16px;
-  color: #000000;
-  margin-bottom: 20px;
 }
 
 .info-box {
