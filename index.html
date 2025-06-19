@@ -47,12 +47,24 @@
     <section class="location">
       <h2 class="section-title">Location</h2>
       <p>성북구청 4F 아트홀</p>
-      <img src="map.jpg" alt="지도 이미지" />
+
+      <!-- ✅ 지도 삽입 -->
+      <div
+        id="map"
+        style="
+          width: 100%;
+          height: 300px;
+          border-radius: 16px;
+          margin: 20px 0;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        "
+      ></div>
+
       <address class="address">
         서울특별시 성북구 보문로 168 (삼선동 5가)
       </address>
 
-      <!-- 위치 정보 박스 디자인 시작 -->
+      <!-- 위치 정보 박스 -->
       <div class="info-box">
         <div class="icon-area">
           <i class="ri-bus-line"></i><span>버스</span>
@@ -102,7 +114,6 @@
           </div>
         </div>
       </div>
-      <!-- 위치 정보 박스 디자인 끝 -->
     </section>
 
     <section class="contact">
@@ -112,5 +123,28 @@
         <p>대표전화 : 02-2241-3114 (120 다산콜센터로 연결)</p>
       </div>
     </section>
+
+    <!-- ✅ 카카오 지도 스크립트: autoload=false 반드시 포함 -->
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fd08044495f5f99125f1a32ffcb77fb8&autoload=false"
+    ></script>
+    <script>
+      kakao.maps.load(function () {
+        var mapContainer = document.getElementById('map'),
+          mapOption = {
+            center: new kakao.maps.LatLng(37.5894, 127.0166),
+            level: 3,
+          };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition = new kakao.maps.LatLng(37.5894, 127.0166);
+        var marker = new kakao.maps.Marker({
+          position: markerPosition,
+        });
+        marker.setMap(map);
+      });
+    </script>
   </body>
 </html>
