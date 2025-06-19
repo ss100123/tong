@@ -23,17 +23,16 @@ header p {
 }
 
 .poster {
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 700px; /* 데스크탑 기준 정렬 */
+  width: 100%; /* 모바일에서 100% 차지 */
 }
 
 .poster img {
-  width: 100%;
-  max-width: 700px; /* Contact us 박스와 같은 최대 폭 */
+  display: block; /* 이미지 아래 빈공간 제거 */
+  width: 100%; /* 부모 폭 기준 가득 */
   height: auto;
-  border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
