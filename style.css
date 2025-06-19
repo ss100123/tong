@@ -18,7 +18,7 @@ header {
 
 header h1 {
   text-align: center;
-  padding: 20px 20px 20px;
+  padding: 0px 20px 20px;
   font-size: 22pt;
   margin-bottom: 10px;
 }
@@ -68,7 +68,7 @@ section {
 .address {
   text-align: center;
   font-style: normal;
-  font-family: 'Noto Sans KR', sans-serif; /* 전체 폰트와 일치시킴 */
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   color: #000000;
   margin-bottom: 20px;
