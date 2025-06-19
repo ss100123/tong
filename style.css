@@ -169,7 +169,9 @@ section {
   .info-box {
     flex-direction: column;
   }
-
+  body {
+    padding: 0;
+  }
   .icon-area {
     flex-direction: row;
     justify-content: flex-start;
